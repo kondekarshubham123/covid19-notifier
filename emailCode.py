@@ -51,7 +51,7 @@ def emailsend(user,data):
     session.sendmail(sender_address, receiver_address, text)
     session.quit()
 
-    print('Mail Sent to ',user.email)
+    print('Mail Sent',user.email)
 
 
 def dummySend(user,data):
