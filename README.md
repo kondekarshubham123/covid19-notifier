@@ -1,1 +1,1 @@
-# covid19-notifier
+# covid19-vaccine-notifier
