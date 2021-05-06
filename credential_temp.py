@@ -20,6 +20,9 @@ class Receiver(object):
 
 SendMain = Sender()
 
+## Make Receiver objects
 rcv1 = Receiver('Firstname','Lastname','receiveremail@gmail.com','413512','06-05-2021')
+rcv2 = Receiver('Firstname','Lastname','receiveremail@gmail.com','413003','06-05-2021')
 
-Users = [rcv1]
+## Append in Users
+Users = [rcv1, rcv2]
