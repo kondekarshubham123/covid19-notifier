@@ -54,9 +54,6 @@ def emailsend(user,data):
 
     print('Mail Sent',user.email)
 
-    ll = 't'+str(thr)+'.join()'
-    exec(ll)
-
 
 def dummySend(user,data):
     
