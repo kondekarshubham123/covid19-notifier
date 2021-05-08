@@ -2,6 +2,7 @@ import smtplib
 from credential import SendMain
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import datetime
 
 
 def emailsend(user,data):
@@ -53,6 +54,9 @@ def emailsend(user,data):
 
     print('Mail Sent',user.email)
 
+    ll = 't'+str(thr)+'.join()'
+    exec(ll)
+
 
 def dummySend(user,data):
     
@@ -76,4 +80,4 @@ def dummySend(user,data):
         lis += "Vaccine type        :   " +hos['vaccine']                 + '\n'
         lis += '----------------------\n'
 
-    print(mail_content+lis)
+    print(mail_content+lis,datetime.datetime.now())
