@@ -3,7 +3,7 @@ import time
 import json
 import requests
 import threading
-from Notifier import emailsend,dummySend
+from notifier import emailsend,dummySend
 from credential import Users
 
 
