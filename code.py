@@ -3,7 +3,7 @@ import time
 import json
 import requests
 import threading
-from emailCode import emailsend,dummySend
+from Notifier import emailsend,dummySend,notifiybysong
 from credential import Users
 
 
@@ -18,7 +18,8 @@ def User_check(user):
         if op['sessions'] == []:
             pass
         else:
-            dummySend(user,op)
+            #dummySend(user,op)
+            notifiybysong(user,op)
             sys.exit()
 
 for use in Users:
