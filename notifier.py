@@ -1,7 +1,6 @@
 import os
 import smtplib
 from credential import SendMain
-from pygame import mixer
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import datetime
@@ -81,12 +80,3 @@ def dummySend(user,data):
 
     print(mail_content+lis,datetime.datetime.now())
 
-
-def notifiybysong(user,op):
-    
-    os.chdir(os.path.join(os.getcwd(),'src'))
-    # print(os.path.join(os.getcwd(),'iphone.mp3'))
-
-    mixer.init()
-    mixer.music.load(os.path.join(os.getcwd(),'iphone.mp3'))
-    mixer.music.play()
