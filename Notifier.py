@@ -84,9 +84,9 @@ def dummySend(user,data):
 
 def notifiybysong(user,op):
     
-    os.chdir(os.path.join(os.getcwd(),'src','iphone.mp3'))
-    os.getcwd()
-    
+    os.chdir(os.path.join(os.getcwd(),'src'))
+    # print(os.path.join(os.getcwd(),'iphone.mp3'))
+
     mixer.init()
-    mixer.music.load(os.getcwd())
+    mixer.music.load(os.path.join(os.getcwd(),'iphone.mp3'))
     mixer.music.play()
