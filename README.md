@@ -15,3 +15,39 @@
     ```markdown
     $ mv credential_temp.py credential.py
     ```
+
+
+3. Type your gmail email-id and password in `credential.py`
+
+    ```markdown
+    class Sender(object):
+    def __init__(self):
+        self.__senderEmail = 'sender@gmail.com' # Change here
+        self.__senderpwd   = 'XXXXXX'           # Type password here
+    ```
+    
+    and make sure you allow [Less secure app](https://myaccount.google.com/lesssecureapps) from your gmail.
+    
+
+4. Create users and append Receiver object to Users list
+
+    ```markdown
+    Example: 
+    
+    rcv1 = Receiver('Firstname','Lastname','receiveremail@gmail.com','Pincode','DD-MM-YYYY')
+    rcv2 = Receiver('Firstname','Lastname','receiveremail@gmail.com','Pincode','DD-MM-YYYY')
+    .
+    .
+    .
+    
+    Users = [rcv1,rcv2,...]
+    ```
+    
+And thats all.
+
+
+5. Final step run `code.py`.
+
+    ```markdown
+    python3 code.py
+    ```
