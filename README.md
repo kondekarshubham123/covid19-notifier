@@ -1,5 +1,17 @@
 # covid19-vaccine-notifier
 
+
+### Functions
+
+`emailsend(user,data)`      :-- 📧 Mail Notifier 
+
+`dummySend(user,data)`      :-- 🖥️ Display data on termial/cmd  
+
+`songNotify(user, data)`    :-- 🔊 Song notifier 
+
+
+You can use any of these function from `code.py:ln 22`
+
 ### Usage
 
 1. Download repository & locate it
